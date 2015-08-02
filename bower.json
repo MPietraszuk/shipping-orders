@@ -1,0 +1,20 @@
+{
+  "name": "shipping-orders",
+  "version": "0.0.1",
+  "authors": [
+    "Mehran Hatami <mehranhatamie@gmail.com>"
+  ],
+  "description": "An app to help with shipping goods",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.4.3",
+    "angular-animate": "1.4.3",
+    "angular-aria": "1.4.3",
+    "angular-material": "~0.10.0",
+    "angular-cookies": "1.4.3",
+    "angular-resource": "1.4.3",
+    "angular-route": "1.4.3",
+    "angular-sanitize": "1.4.3",
+    "angular-ui-router": "~0.2.15"
+  }
+}

@@ -1,0 +1,38 @@
+<md-dialog ng-controller="AddOrderDialogCtrl as vm" aria-label="New Order">
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>New Order</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="vm.cancel()">
+          <md-icon md-svg-src="assets/svg/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <div>
+        <md-input-container>
+          <label>Customer Address</label>
+          <input type="text" ng-model="vm.order.customerAddress" />
+        </md-input-container>
+
+        <md-select placeholder="OrderedItem" ng-model="vm.order.orderedItem">
+          <md-option ng-repeat="item in vm.items" value="{{item}}">{{item}}</md-option>
+        </md-select>
+
+        <md-select placeholder="Company" ng-model="vm.order.companyName">
+          <md-option ng-repeat="company in vm.companies" value="{{company}}">{{company}}</md-option>
+        </md-select>
+      </div>
+    </md-dialog-content>
+    <div class="md-actions" layout="row">
+      <span flex></span>
+      <md-button ng-click="vm.cancel()" class="md-primary">
+        Cancel
+      </md-button>
+      <md-button ng-click="vm.ok()" class="md-primary">
+        Ok
+      </md-button>
+    </div>
+  </form>
+</md-dialog>
