@@ -13,7 +13,7 @@ module.exports = function (app) {
     env = process.env.NODE_ENV || 'development',
     root = __dirname + '/..';
 
-  app.set('port', 3000);
+  app.set('port', (process.env.PORT || 3000));
   app.set('env', env);
 
   app.set('views', root + '/public');
