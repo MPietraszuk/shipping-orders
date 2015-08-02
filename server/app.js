@@ -4,7 +4,7 @@ var express = require('express'),
   routes = require('./routes'),
   app = express(),
   server = require('http').createServer(app),
-  host = process.env.IP || 'localhost';
+  host = process.env.IP || '0.0.0.0';
 
 config(app);
 
