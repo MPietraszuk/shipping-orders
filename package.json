@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "An app to help with shipping goods",
   "main": "index.js",
+  "engines": {
+    "node": "0.10.x"
+  },
   "scripts": {
     "start": "node server/app",
     "stop": "node_modules/forever/bin/forever stop server/app.js",
